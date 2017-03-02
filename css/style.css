@@ -1,6 +1,8 @@
 body {
     margin: 0;
-    background-image: url("../images/equalizer.png");
+    background-image: url("../images/hip-hop.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
     background-attachment: fixed;
 }
 
@@ -20,6 +22,7 @@ ul {
 
 li {
     list-style: none;
+    color: white;
 }
 
 .navbar {
@@ -38,5 +41,48 @@ li {
 
 .jumbotron {
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #7c25f8;
+    border: none;
+    border-radius: 100px;
+    width: 20%;
+    font-size: 14px;
+}
+
+.btn-primary:hover {
+    background-color: rgb(98, 7, 227);
+}
+
+.item {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 40px;
+}
+
+.glyphicon {
+    font-size: 40px;
+}
+
+.bg-white {
+    background-color: white;
+    color: black;
+}
+
+h2,
+h3 {
+    color: rgb(124, 37, 248);
+    font-size: 40px;
+    text-align: left;
+    font-weight: bold;
+}
+
+p {
+    text-align: left;
 }

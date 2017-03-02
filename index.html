@@ -21,7 +21,7 @@
 
     <title>De la musique pour tous - Spotify</title>
 
-    <link rel="icon" href="//d2c87l0yth4zbw-2.global.ssl.fastly.net/i/_global/favicon.png">
+    <link rel="icon" href="../images/spotify-ico.png">
     <!--[if IE]><link rel="shortcut icon" href="//d2c87l0yth4zbw-2.global.ssl.fastly.net/i/_global/favicon.ico"><![endif]-->
 
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="//d2c87l0yth4zbw.global.ssl.fastly.net/i/_global/touch-icon-144.png">
@@ -33,7 +33,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- CSS Reset -->
-    <!--<link rel="stylesheet" type="text/css" href="css/knacss.css">-->
+    <link rel="stylesheet" type="text/css" href="css/knacss.css">
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -144,8 +144,8 @@
         <nav class="navbar navbar-default navbar-fixed-top navbar-highlight" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="/fr/" data-tracking='{"category": "menu", "action": "spotify-logo"}'>
-                        <span class="navbar-logo">Spotify</span>
+                    <a class="navbar-brand" href="#" data-tracking='{"category": "menu", "action": "spotify-logo"}'>
+                        <span class="navbar-logo"><img src="../images/spotify.png"></span>
                     </a>
                     <ul>
                         <li>
@@ -162,7 +162,7 @@
                             <a href="#" id="nav-link-download" data-ga-category="menu" data-ga-action="download" data-gtm-event-name="download_spotify_button_clicked" data-tracking='{"category": "download", "action": "download start", "label": "download-navbar"}'>Télécharger
    </a>
                         </li>
-                        <li role="separator"></li>
+                        <li role="separator">|</li>
                         <li>
                             <a href="#" id="nav-link-sign-up" data-ga-category="menu" data-ga-action="sign-up">
       S&#039;inscrire
@@ -181,20 +181,19 @@
     </header>
 
     <div class="jumbotron">
-        <div class="jumbotron-bg" data-original="images/equalizer.png"></div>
         <div class="container">
             <div id="carousel-tour" class="carousel-slide" data-ride="carousel" data-interval="false">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
-                    <li data-target="#carousel-tour" class="js-button-hero-carousel-dots"></li>
-                    <li data-target="#carousel-tour"></li>
-                    <li data-target="#carousel-tour"></li>
+                    <li data-target="#carousel-tour" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-tour" data-slide-to="1"></li>
+                    <li data-target="#carousel-tour" data-slide-to="2"></li>
                 </ol>
                 <!-- Wrapper for slides -->
-                <div role="listbox">
-                    <div>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item">
                         <h1>
-                            <span>
+                            <span class="text-white">
                 De la musique pour tous.
       </span>
                         </h1>
@@ -206,24 +205,24 @@
     </a>
                     </div>
 
-                    <div>
+                    <div class="item active">
                         <h1>
-                            <span>
+                            <span class="text-white">
         Offrez Spotify Premium à toute la famille.<br>Seulement 14,99&nbsp;€.
       </span>
                         </h1>
-                        <a href="#">
+                        <a href="#" class="btn btn-primary">
             EN SAVOIR PLUS
     </a>
                     </div>
 
-                    <div>
+                    <div class="item">
                         <h1>
-                            <span>
+                            <span class="text-white">
                 Utilisez Spotify sur votre PlayStation®.
       </span>
                         </h1>
-                        <a href="#">
+                        <a href="#" class="btn btn-primary">
             EN SAVOIR PLUS
     </a>
                     </div>
@@ -231,15 +230,19 @@
                 </div>
 
                 <!-- Controls -->
-                <a href="#carousel-tour">
-                    <span></span>
-                    <span>
+                <a class="left carousel-control" href="#carousel-tour" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="icon-prev">
+                    </span>
+                    <span class="sr-only">
                             Précédent
             </span>
                 </a>
-                <a href="#carousel-tour">
-                    <span></span>
-                    <span>
+                <a class="right carousel-control" href="#carousel-tour" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="icon-next">
+                    </span>
+                    <span class="sr-only">
                             Continuer
             </span>
                 </a>
@@ -247,21 +250,24 @@
         </div>
     </div>
 
-    <div>
-        <a name="whats-on-spotify" href="#whats-on-spotify" data-ga-category="home" data-ga-action="arrows" data-ga-label="learn-more">
-            <div>
+    <div class="container">
+        <a class="btn-scroll" name="whats-on-spotify" href="#whats-on-spotify" data-ga-category="home" data-ga-action="arrows" data-ga-label="learn-more">
+            <div class="btn-scroll-arrow">
+                <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+
                 <svg><use xlink:href="#scroll-down"></svg>
                 <svg><use xlink:href="#scroll-down"></svg>
             </div>
-            <span>EN SAVOIR PLUS SUR SPOTIFY</span>
+            <span class="btn-scroll-text">EN SAVOIR PLUS SUR SPOTIFY</span>
         </a>
 
     </div>
 
-    <div>
-        <div>
-            <div>
-                <div>
+    <div class="jumbotron bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7 col-sm-push-5 col-md-5 col-md-push-7">
                     <h2>
                         Les avantages de Spotify
                     </h2>
@@ -290,12 +296,20 @@
                         </p>
                     </div>
                 </div>
-                <div>
+                <div class="col-sm-5 col-sm-pull-7 col-md-6 col-md-pull-5">
                     <div>
-                        <div id="album-slot1" data-tracking='{"category": "home", "action": "albums", "label": "slot1"}'></div>
-                        <div id="album-slot2" data-tracking='{"category": "home", "action": "albums", "label": "slot2"}'></div>
-                        <div id="album-slot3" data-tracking='{"category": "home", "action": "albums", "label": "slot3"}'></div>
-                        <div id="album-slot4" data-tracking='{"category": "home", "action": "albums", "label": "slot4"}'></div>
+                        <div id="album-slot1" data-tracking='{"category": "home", "action": "albums", "label": "slot1"}'>
+                            <img src="http://placehold.it/282.5x282.5">
+                        </div>
+                        <div id="album-slot2" data-tracking='{"category": "home", "action": "albums", "label": "slot2"}'>
+                            <img src="http://placehold.it/282.5x282.5">
+                        </div>
+                        <div id="album-slot3" data-tracking='{"category": "home", "action": "albums", "label": "slot3"}'>
+                            <img src="http://placehold.it/282.5x282.5">
+                        </div>
+                        <div id="album-slot4" data-tracking='{"category": "home", "action": "albums", "label": "slot4"}'>
+                            <img src="http://placehold.it/282.5x282.5">
+                        </div>
                     </div>
                 </div>
             </div>
