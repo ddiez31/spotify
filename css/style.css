@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    background-image: url("../images/equalizer.png");
+    background-attachment: fixed;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: rgb(155, 240, 225);
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-style: none;
+}
+
+.navbar-logo {
+    color: white;
+}
+
+.navbar-header {
+    width: 90%;
+    float: right;
+}
+
+.jumbotron {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
