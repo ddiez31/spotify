@@ -49,6 +49,14 @@ li {
     font-weight: bold;
 }
 
+.jumbotron-devices {
+    color: white;
+    background-color: rgb(35, 35, 35);
+    text-align: center;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
 .btn-primary {
     background-color: #7c25f8;
     border: none;
@@ -101,6 +109,14 @@ h2 {
     font-size: 40px;
     text-align: left;
     font-weight: bold;
+}
+
+.text-white-center {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 
 p {
@@ -170,4 +186,139 @@ p {
     display: block;
     height: auto;
     max-width: 100%;
+}
+
+.phone {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    float: right;
+}
+
+.device-list {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.list:after {
+    content: '-';
+    padding-left: 14px;
+    color: #7c25f8;
+}
+
+.list:last-child:after {
+    content: ' ';
+}
+
+.price {
+    font-weight: bold;
+    float: right;
+    margin-top: 0;
+    font-size: 30px;
+}
+
+h3.text-aquamarine {
+    float: left;
+    font-size: 30px;
+}
+
+span.text-aquamarine {
+    font-size: 20px;
+}
+
+.clearfix {
+    border-bottom: 1px solid white;
+    border-top: none;
+}
+
+ul.text-white {
+    font-weight: bold;
+    list-style: none;
+    font-size: 30px;
+    text-align: left;
+    border-bottom: 1px solid white;
+}
+
+.download {
+    background-color: #7c25f8;
+    border: none;
+    border-radius: 100px;
+    width: 50%;
+    font-size: 14px;
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.download:hover {
+    background-color: rgb(98, 7, 227);
+}
+
+.tour-variation {
+    display: flex;
+}
+
+.details-subscriptions {
+    font-weight: 700;
+    display: block;
+}
+
+.subscriptions {
+    padding-bottom: -50px;
+    padding-top: -50px;
+}
+
+.subscribe {
+    background-color: #7c25f8;
+    border: none;
+    border-radius: 100px;
+    width: 60%;
+    font-size: 14px;
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.subscribe:hover {
+    background-color: rgb(98, 7, 227);
+}
+
+.text-center.legal.text-white {
+    font-size: 14px;
+}
+
+footer {
+    background-color: #000;
+    padding: 50px 0 20px;
+}
+
+h3.nav-title {
+    color: #919496;
+    font-size: 12px;
+    letter-spacing: .08em;
+    margin: 50px 0 22px;
+    text-transform: uppercase;
+}
+
+ul.nav {
+    display: block;
+}
+
+.footer-logo-social {
+    fill: white;
+    width: 89px;
+    height: 27px;
+}
+
+.btn-logo-social {
+    background-color: rgb(46, 47, 51);
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    border-radius: 60%;
+}
+
+.nav-social {
+    float: left;
 }

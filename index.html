@@ -31,7 +31,8 @@
 
     <link rel="canonical" href="https://www.spotify.com/">
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css" crossorigin="anonymous">-->
     <!-- CSS Reset -->
     <link rel="stylesheet" type="text/css" href="css/knacss.css">
     <!-- CSS -->
@@ -184,7 +185,7 @@
 
     <div class="jumbotron">
         <div class="container">
-            <div id="carousel-tour" class="carousel-slide" data-ride="carousel" data-interval="true">
+            <div id="carousel-tour" class="carousel-slide" data-ride="carousel" data-interval="2000">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
                     <li data-target="carousel-tour" data-slide-to="0" class="active"></li>
@@ -301,13 +302,13 @@
                             <a href="#"><img src="http://placehold.it/250x250"></a>
                         </div>
                         <div id="album-slot2" data-tracking='{"category": "home", "action": "albums", "label": "slot2"}'>
-                            <img src="http://placehold.it/250x250">
+                            <a href="#"><img src="http://placehold.it/250x250"></a>
                         </div>
                         <div id="album-slot3" data-tracking='{"category": "home", "action": "albums", "label": "slot3"}'>
-                            <img src="http://placehold.it/250x250">
+                            <a href="#"><img src="http://placehold.it/250x250"></a>
                         </div>
                         <div id="album-slot4" data-tracking='{"category": "home", "action": "albums", "label": "slot4"}'>
-                            <img src="http://placehold.it/250x250">
+                            <a href="#"><img src="http://placehold.it/250x250"></a>
                         </div>
                     </div>
                 </div>
@@ -386,67 +387,67 @@
         </div>
     </div>
 
-    <div>
+    <div class="container">
         <a name="play-on-all-your-devices" href="#play-on-all-your-devices" data-ga-category="home" data-ga-action="arrows" data-ga-label="devices">
-            <div>
-                <svg><use xlink:href="#scroll-down"></svg>
-                <svg><use xlink:href="#scroll-down"></svg>
+            <div class="btn-scroll-arrow2">
+                <svg class="scroll-down2"><use xlink:href="#scroll-down"></svg>
+                <svg class="scroll-down2"><use xlink:href="#scroll-down"></svg>
             </div>
         </a>
 
     </div>
 
 
-    <div>
-        <div>
+    <div class="jumbotron-devices">
+        <div class="container">
             <img src="//d2c87l0yth4zbw.global.ssl.fastly.net/i/home/all-devices.svg">
-            <div>
-                <h2>
-                    <span>
+            <div class="animated animatedFadeInUp fadeInUp">
+                <h2 class="text-white-center">
+                    <span class="text-white">
                     Un compte. Emportez votre musique partout.
         </span>
                 </h2>
             </div>
-            <ul>
-                <li>Mobile</li>
-                <li>Ordinateur</li>
-                <li>Tablette</li>
-                <li>Voiture</li>
-            </ul>
-            <ul>
-                <li>Haut-parleur</li>
-                <li><a href="#" data-tracking='{"category": "home (devices)", "action": "playstation"}'>PlayStation®</a></li>
-                <li>TV</li>
-                <li><a href="#" data-tracking='{"category": "home (devices)", "action": "web-player"}'>Lecteur Web</a><span>Lecteur Web</span></li>
-            </ul>
+            <div class="container">
+                <ul class="device-list">
+                    <li class="list">Mobile</li>
+                    <li class="list">Ordinateur</li>
+                    <li class="list">Tablette</li>
+                    <li class="list">Voiture</li>
+                </ul>
+                <ul class="device-list">
+                    <li class="list">Haut-parleur</li>
+                    <li class="list"><a href="#" data-tracking='{"category": "home (devices)", "action": "playstation"}'>PlayStation®</a></li>
+                    <li class="list">TV</li>
+                    <li class="list"><a href="#" data-tracking='{"category": "home (devices)", "action": "web-player"}'>Lecteur Web</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
-    <div>
+    <div class="container">
         <a name="go-get-the-music" href="#go-get-the-music" data-ga-category="home" data-ga-action="arrows" data-ga-label="subscriptions">
-            <div>
-                <svg><use xlink:href="#scroll-down"></svg>
-                <svg><use xlink:href="#scroll-down"></svg>
+            <div class="btn-scroll-arrow2">
+                <svg class="scroll-down2"><use xlink:href="#scroll-down"></svg>
+                <svg class="scroll-down2"><use xlink:href="#scroll-down"></svg>
             </div>
         </a>
-
     </div>
 
-    <div>
-        <div data-original="//d2c87l0yth4zbw-2.global.ssl.fastly.net/i/home/bg-albums.png"></div>
-        <div>
-            <div>
-                <div>
-                    <div>
-                        <div>
-                            <div>
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-sm-10 col-lg-8">
+                            <div class="animated animatedFadeInUp fadeInUp">
                                 <h1>
-                                    <span>
+                                    <span class="text-white">
                                         En avant la musique.
                   </span>
                                 </h1>
                             </div>
-                            <div>
+                            <div class="text-white">
                                 <p>
                                     De la musique gratuite.
                                     <br> Ou optez pour un compte Premium et écoutez vos morceaux à la demande, partout où vous voulez.
@@ -454,235 +455,208 @@
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <div>
-                            <div>
-                                <h3>Spotify</h3>
-                                <h3>
-                                    0,00&nbsp;€ <span> / mois</span>
+                    <div class="row">
+                        <div class="col-sm-10">
+                            <div class="animated animatedFadeInUp fadeInUp">
+                                <h3 class="text-aquamarine">Spotify</h3>
+                                <h3 class="price">
+                                    0,00&nbsp;€ <span class="text-aquamarine"> / mois</span>
                                 </h3>
-                                <div></div>
-                                <ul>
+                                <div class="clearfix"></div>
+                                <ul class="text-white">
                                     <li>
                                         Écoutez vos artistes et albums préférés. Vous entendrez occasionnellement des spots publicitaires.
                                     </li>
                                 </ul>
-                                <a href="#" data-tracking='{"category": "home (subscriptions)", "action": "free"}'>
+                                <a href="#" class="btn btn-primary download" data-tracking='{"category": "home (subscriptions)", "action": "free"}'>
                                     TÉLÉCHARGER SPOTIFY FREE
                 </a>
                             </div>
 
-                            <div></div>
+                            <div class="clearfix"></div>
 
-                            <div>
-                                <h3>
-                                    Spotify Premium
-                                </h3>
-                                <h3>
-                                    9,99&nbsp;€ <span> / mois</span>
-                                </h3>
-                                <div></div>
-                                <div>
-                                    <p><a href="#" data-ga-category="home (subscriptions)" data-ga-action="family">Offre Family</a> disponible</p>
+                            <h3 class="text-aquamarine">Spotify Premium</h3>
+                            <h3 class="price">
+                                9,99&nbsp;€ <span class="text-aquamarine"> / mois</span>
+                            </h3>
+                            <div class="clearfix"></div>
+                            <div class="tour-variation">
+                                <p class="text-white"><a href="#" data-ga-category="home (subscriptions)" data-ga-action="family">Offre Family</a> disponible</p>
 
-                                    <p>Essayez Spotify gratuitement pendant 30 jours*</p>
-                                </div>
-                                <div></div>
+                                <p class="text-white">Essayez Spotify gratuitement pendant 30 jours*</p>
+                            </div>
+                            <div class="clearfix"></div>
 
-                                <ul>
-                                    <li>
-                                        Écoute à la demande.
-                                    </li>
-                                    <li>
-                                        Musique hors connexion
-                                    </li>
-                                    <li>
-                                        Aucune pub
-                                    </li>
-                                    <li>
-                                        Grande qualité audio.
-                                    </li>
-                                </ul>
-                                <a href="#" data-tracking='{"category": "home (subscriptions)", "action": "premium"}'>
+                            <ul class="details-subscriptions text-white">
+                                <li class="subscriptions">
+                                    Écoute à la demande.
+                                </li>
+                                <li class="subscriptions">
+                                    Musique hors connexion
+                                </li>
+                                <li class="subscriptions">
+                                    Aucune pub
+                                </li>
+                                <li class="subscriptions">
+                                    Grande qualité audio.
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-primary subscribe" data-tracking='{"category": "home (subscriptions)", "action": "premium"}'>
                                     ABONNEZ-VOUS À SPOTIFY PREMIUM
                 </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <div>
                         </div>
                     </div>
                 </div>
             </div>
-            <p>
-                * L'offre Spotify® d'essai gratuit de 30 est soumise aux <a href="#">conditions générales</a> . Les utilisateurs abonnés au service Premium ou Unlimited, ou ayant déjà profité d'un essai gratuit ne peuvent pas bénéficier de cette offre.
-            </p>
+            <div class="grid-overflow hidden-xs hidden-sm">
+                <div class="animated animatedFadeInUp fadeInUp">
+                    <div class="phone">
+                        <img src="http://placehold.it/400x600">
+                    </div>
+                </div>
+            </div>
         </div>
+        <p class="text-center legal text-white">
+            * L'offre Spotify® d'essai gratuit de 30 est soumise aux <a href="#">conditions générales</a> . Les utilisateurs abonnés au service Premium ou Unlimited, ou ayant déjà profité d'un essai gratuit ne peuvent pas bénéficier de cette offre.
+        </p>
+    </div>
     </div>
 
     </div>
 
-    <footer role="contentinfo">
-        <div>
-            <nav>
+    <footer role="contentinfo" class="footer footer-default footer-highlight-aquamarine">
+        <div class="container">
+            <nav class="row">
 
-                <div>
-                    <div>
-                        <a href="#">Spotify</a>
+                <div class="col-xs-12 col-md-2">
+                    <div class="footer-logo">
+                        <a href="#"><svg class="navbar-logo"><use xlink:href="#spotify-logo"></svg></a>
                     </div>
                 </div>
 
-                <div>
-                    <h3>Société</h3>
-                    <ul>
-
+                <div class="col-xs-6 col-sm-4 col-md-2">
+                    <h3 class="nav-title">Société</h3>
+                    <ul class="nav">
                         <li>
                             <a href="#" id="nav-link-about" data-ga-category="menu" data-ga-action="about">
       A propos
                 </a>
                         </li>
-
                         <li>
                             <a href="#" id="nav-link-jobs" data-ga-category="menu" data-ga-action="jobs">
       Offres d&#039;emploi
                 </a>
                         </li>
-
                         <li>
                             <a href="#" id="nav-link-press" data-ga-category="menu" data-ga-action="press">
       Presse
                 </a>
                         </li>
-
                         <li>
                             <a href="#" id="nav-link-news" data-ga-category="menu" data-ga-action="news">
       Actualités
                 </a>
                         </li>
-
                     </ul>
                 </div>
 
-                <div>
-                    <h3>Communautés</h3>
-                    <ul>
-
+                <div class="col-xs-6 col-sm-4 col-md-2">
+                    <h3 class="nav-title">Communautés</h3>
+                    <ul class="nav">
                         <li>
                             <a href="#" id="nav-link-artists" data-ga-category="menu" data-ga-action="artists">
       Espace artistes
                 </a>
                         </li>
-
                         <li>
                             <a href="#" id="nav-link-developers" data-ga-category="menu" data-ga-action="developers">
       Développeurs
                 </a>
                         </li>
-
                         <li>
                             <a href="#" id="nav-link-brands" data-ga-category="menu" data-ga-action="brands">
       Marques
                 </a>
                         </li>
-
                     </ul>
                 </div>
 
-                <div>
-                    <h3>Liens utiles</h3>
-                    <ul>
+                <div class="col-xs-6 col-sm-4 col-md-2">
+                    <h3 class="nav-title">Liens utiles</h3>
+                    <ul class="nav">
                         <li>
                             <a href="#" id="nav-link-help" data-ga-category="menu" data-ga-action="help">
       Aide
                 </a>
                         </li>
-
                         <li>
                             <a href="#" id="nav-link-gift" data-ga-category="menu" data-ga-action="gift">
       Cadeau
                 </a>
                         </li>
-
                         <li>
                             <a href="#" id="nav-link-play" data-ga-category="menu" data-ga-action="play">
       Lecteur Web
                 </a>
                         </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-4 col-social">
+                    <ul class="nav-social">
+                        <li class="btn-logo-social">
+                            <a href="#"><svg class="footer-logo-social"><use xlink:href="#instagram-icon"><svg></a>
+                        </li>
+                        <li class="btn-logo-social">
+                            <a href="#"><svg class="footer-logo-social"><use xlink:href="#twitter-icon"><svg></a>
+                        </li>
+                        <li class="btn-logo-social">
+                            <a href="#"><svg class="footer-logo-social"><use xlink:href="#facebook-icon"><svg></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
 
+            <nav>
+                <div>
+
+                    <ul>
+                        <li>
+                            <a href="#">Légal</a>
+                        </li>
+                        <li>
+                            <a href="#">Confidentialité</a>
+                        </li>
+                        <li>
+                            <a href="#">Cookies</a>
+                        </li>
+                        <li>
+                            <a href="#">À propos des pubs</a>
+                        </li>
                     </ul>
                 </div>
 
                 <div>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <svg>
-      <use xlink:href="#instagram-icon">
-    <svg>
-    <span>Instagram</span>
-  </a>
-</li>
-<li>
-  <a href="#">
-    <svg>
-      <use xlink:href="#twitter-icon">
-    <svg>
-    <span>Twitter</span></a>
-</li>
-<li>
-  <a href="#">
-    <svg>
-      <use xlink:href="#facebook-icon">
-    <svg>
-    <span>Facebook</span>
-  </a>
-</li>
-        </ul>
-      </div>
-    </nav>
+                    <a href="#" title="Cliquez pour changer">
+                        <div>
+                            <div>
+                                France
+                            </div>
+                            <div>
+                                <span></span>
+                            </div>
+                        </div>
+                    </a>
 
-    <nav>
-      <div>
+                    <small>&copy; 2017 Spotify AB</small>
+                </div>
+            </nav>
+        </div>
+    </footer>
+</body>
+<!-- JQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
+<!-- This page was rendered using Twig -->
 
-                <ul>
-          <li>
-            <a href="#">Légal</a>
-          </li>
-          <li>
-            <a href="#">Confidentialité</a>
-          </li>
-          <li>
-            <a href="#">Cookies</a>
-          </li>
-          <li>
-            <a href="#">À propos des pubs</a>
-          </li>
-        </ul>
-      </div>
-
-            <div>
-                <a href="#" title="Cliquez pour changer">
-          <div>
-            <div>
-              France
-            </div>
-            <div>
-              <span></span>
-            </div>
-          </div>
-        </a>
-
-                <small>&copy; 2017 Spotify AB</small>
-      </div>
-    </nav>
-  </div>
-</footer>
-    </body>
-    <!-- JQuery -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="js/app.js"></script>
-  <!-- This page was rendered using Twig -->
 </html>
