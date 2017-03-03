@@ -1,5 +1,4 @@
 body {
-    margin: 0;
     background-image: url("../images/hip-hop.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -17,12 +16,12 @@ a:hover {
 
 ul {
     display: flex;
-    justify-content: space-around;
 }
 
 li {
     list-style: none;
     color: white;
+    padding: 10px;
 }
 
 .navbar {
@@ -31,7 +30,9 @@ li {
 }
 
 .navbar-logo {
-    color: white;
+    fill: white;
+    width: 89px;
+    height: 27px;
 }
 
 .navbar-header {
@@ -75,9 +76,28 @@ li {
     color: black;
 }
 
-h2,
-h3 {
+.text-aquamarine {
+    color: rgb(155, 240, 225);
+    font-size: 30px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.text-purple {
     color: rgb(124, 37, 248);
+    font-size: 30px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.h2-text-purple {
+    color: rgb(124, 37, 248);
+    font-size: 40px;
+    text-align: left;
+    font-weight: bold;
+}
+
+h2 {
     font-size: 40px;
     text-align: left;
     font-weight: bold;
@@ -85,4 +105,69 @@ h3 {
 
 p {
     text-align: left;
+    font-size: 12px;
+}
+
+.scroll-down1 {
+    width: 25px;
+    height: 15px;
+    display: block;
+    fill: #9bf0e1;
+    margin: auto;
+}
+
+.scroll-down2 {
+    width: 25px;
+    height: 15px;
+    display: block;
+    fill: #9bf0e1;
+    margin: auto;
+}
+
+.btn-scroll-arrow1 {
+    background-color: white;
+    display: block;
+    width: 52px;
+    height: 52px;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: 10px gray;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-scroll-arrow1:hover {
+    transform: scale(1.2);
+}
+
+.btn-scroll-arrow2 {
+    background-color: white;
+    display: block;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    box-shadow: 10px gray;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-scroll-arrow2:hover {
+    transform: scale(1.2);
+}
+
+.albums {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#album-slot1,
+#album-slot2,
+#album-slot3,
+#album-slot4 {
+    margin: 1px;
+}
+
+.iphone {
+    transform: rotate(30deg);
+    display: block;
+    height: auto;
+    max-width: 100%;
 }

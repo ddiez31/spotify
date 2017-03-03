@@ -142,38 +142,40 @@
 
 
         <nav class="navbar navbar-default navbar-fixed-top navbar-highlight" role="navigation">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#" data-tracking='{"category": "menu", "action": "spotify-logo"}'>
-                        <span class="navbar-logo"><img src="../images/spotify.png"></span>
+                        <svg class="navbar-logo"><use xlink:href="#spotify-logo"></svg>
                     </a>
-                    <ul>
-                        <li>
-                            <a href="#" id="nav-link-premium" data-ga-category="menu" data-ga-action="premium">
+                    <div class="navbar-collapse">
+                        <ul class="navbar-right">
+                            <li>
+                                <a href="#" id="nav-link-premium" data-ga-category="menu" data-ga-action="premium">
       Premium
                 </a>
-                        </li>
-                        <li>
-                            <a href="#" id="nav-link-help" data-ga-category="menu" data-ga-action="help">
+                            </li>
+                            <li>
+                                <a href="#" id="nav-link-help" data-ga-category="menu" data-ga-action="help">
       Aide
                 </a>
-                        </li>
-                        <li>
-                            <a href="#" id="nav-link-download" data-ga-category="menu" data-ga-action="download" data-gtm-event-name="download_spotify_button_clicked" data-tracking='{"category": "download", "action": "download start", "label": "download-navbar"}'>Télécharger
+                            </li>
+                            <li>
+                                <a href="#" id="nav-link-download" data-ga-category="menu" data-ga-action="download" data-gtm-event-name="download_spotify_button_clicked" data-tracking='{"category": "download", "action": "download start", "label": "download-navbar"}'>Télécharger
    </a>
-                        </li>
-                        <li role="separator">|</li>
-                        <li>
-                            <a href="#" id="nav-link-sign-up" data-ga-category="menu" data-ga-action="sign-up">
+                            </li>
+                            <li role="separator">|</li>
+                            <li>
+                                <a href="#" id="nav-link-sign-up" data-ga-category="menu" data-ga-action="sign-up">
       S&#039;inscrire
                 </a>
-                        </li>
-                        <li>
-                            <a href="#" id="header-login-link" data-tracking='{"category": "menu", "action": "log-in"}'>
-                                <span>Se connecter</span>
-                            </a>
-                        </li>
-                    </ul>
+                            </li>
+                            <li>
+                                <a href="#" id="header-login-link" data-tracking='{"category": "menu", "action": "log-in"}'>
+                                    <span>Se connecter</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -182,12 +184,12 @@
 
     <div class="jumbotron">
         <div class="container">
-            <div id="carousel-tour" class="carousel-slide" data-ride="carousel" data-interval="false">
+            <div id="carousel-tour" class="carousel-slide" data-ride="carousel" data-interval="true">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
-                    <li data-target="#carousel-tour" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-tour" data-slide-to="1"></li>
-                    <li data-target="#carousel-tour" data-slide-to="2"></li>
+                    <li data-target="carousel-tour" data-slide-to="0" class="active"></li>
+                    <li data-target="carousel-tour" data-slide-to="1"></li>
+                    <li data-target="carousel-tour" data-slide-to="2"></li>
                 </ol>
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
@@ -251,15 +253,12 @@
     </div>
 
     <div class="container">
-        <a class="btn-scroll" name="whats-on-spotify" href="#whats-on-spotify" data-ga-category="home" data-ga-action="arrows" data-ga-label="learn-more">
-            <div class="btn-scroll-arrow">
-                <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-                <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-
-                <svg><use xlink:href="#scroll-down"></svg>
-                <svg><use xlink:href="#scroll-down"></svg>
+        <a class="btn-scroll btn-scroll-aquamarine" name="whats-on-spotify" href="#whats-on-spotify" data-ga-category="home" data-ga-action="arrows" data-ga-label="learn-more">
+            <span class="btn-scroll-text btn-scroll-text-above">EN SAVOIR PLUS SUR SPOTIFY</span>
+            <div class="btn-scroll-arrow1">
+                <svg class="scroll-down1"><use xlink:href="#scroll-down"></svg>
+                <svg class="scroll-down1"><use xlink:href="#scroll-down"></svg>
             </div>
-            <span class="btn-scroll-text">EN SAVOIR PLUS SUR SPOTIFY</span>
         </a>
 
     </div>
@@ -268,11 +267,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-7 col-sm-push-5 col-md-5 col-md-push-7">
-                    <h2>
+                    <h2 class="h2-text-purple">
                         Les avantages de Spotify
                     </h2>
                     <div>
-                        <h3>
+                        <h3 class="text-purple">
                             Musique
                         </h3>
                         <p>
@@ -280,7 +279,7 @@
                         </p>
                     </div>
                     <div>
-                        <h3>
+                        <h3 class="text-purple">
                             Playlists
                         </h3>
                         <p>
@@ -288,7 +287,7 @@
                         </p>
                     </div>
                     <div>
-                        <h3>
+                        <h3 class="text-purple">
                             Nouveautés
                         </h3>
                         <p>
@@ -297,18 +296,18 @@
                     </div>
                 </div>
                 <div class="col-sm-5 col-sm-pull-7 col-md-6 col-md-pull-5">
-                    <div>
+                    <div class="albums">
                         <div id="album-slot1" data-tracking='{"category": "home", "action": "albums", "label": "slot1"}'>
-                            <img src="http://placehold.it/282.5x282.5">
+                            <a href="#"><img src="http://placehold.it/250x250"></a>
                         </div>
                         <div id="album-slot2" data-tracking='{"category": "home", "action": "albums", "label": "slot2"}'>
-                            <img src="http://placehold.it/282.5x282.5">
+                            <img src="http://placehold.it/250x250">
                         </div>
                         <div id="album-slot3" data-tracking='{"category": "home", "action": "albums", "label": "slot3"}'>
-                            <img src="http://placehold.it/282.5x282.5">
+                            <img src="http://placehold.it/250x250">
                         </div>
                         <div id="album-slot4" data-tracking='{"category": "home", "action": "albums", "label": "slot4"}'>
-                            <img src="http://placehold.it/282.5x282.5">
+                            <img src="http://placehold.it/250x250">
                         </div>
                     </div>
                 </div>
@@ -316,28 +315,28 @@
         </div>
     </div>
 
-    <div>
+
+    <div class="container">
         <a name="a-few-features" href="#a-few-features" data-ga-category="home" data-ga-action="arrows" data-ga-label="features">
-            <div>
-                <svg><use xlink:href="#scroll-down"></svg>
-                <svg><use xlink:href="#scroll-down"></svg>
+            <div class="btn-scroll-arrow2">
+                <svg class="scroll-down2"><use xlink:href="#scroll-down"></svg>
+                <svg class="scroll-down2"><use xlink:href="#scroll-down"></svg>
             </div>
-        </a>
-
     </div>
+    </a>
 
-    <div>
-        <div data-original="//d2c87l0yth4zbw-2.global.ssl.fastly.net/i/home/bg-albums.png"></div>
-        <div>
-            <div>
-                <div>
-                    <div>
+
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 text-left text-white">
+                    <div class="animated animatedFadeInUp fadeInUp">
                         <h2>
                             Tellement simple.
                         </h2>
                     </div>
                     <div>
-                        <h3>
+                        <h3 class="text-aquamarine">
                             Rechercher
                         </h3>
                         <p>
@@ -345,7 +344,7 @@
                         </p>
                     </div>
                     <div>
-                        <h3>
+                        <h3 class="text-aquamarine">
                             Parcourir
                         </h3>
                         <p>
@@ -353,7 +352,7 @@
                         </p>
                     </div>
                     <div>
-                        <h3>
+                        <h3 class="text-aquamarine">
                             Découvrir
                         </h3>
                         <p>
@@ -361,24 +360,24 @@
                         </p>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <div>
-                            <div>
-                                <img data-original="//d2c87l0yth4zbw-2.global.ssl.fastly.net/i/home/iphone-1a.jpg">
+                <div class="grid-overflow devices-container animated animatedRotated fadeInUpRotated">
+                    <div class="row">
+                        <div class="devices col-xs-4">
+                            <div class="iphone iphone-1">
+                                <img src="http://placehold.it/600x800">
                             </div>
                         </div>
-                        <div>
-                            <div>
-                                <img data-original="//d2c87l0yth4zbw.global.ssl.fastly.net/i/home/iphone-2.jpg">
+                        <div class="devices col-xs-4">
+                            <div class="iphone iphone-2">
+                                <img src="http://placehold.it/600x800">
                             </div>
-                            <div>
-                                <img data-original="//d2c87l0yth4zbw-2.global.ssl.fastly.net/i/home/iphone-3.jpg">
+                            <div class="iphone iphone-3">
+                                <img src="http://placehold.it/600x800">
                             </div>
                         </div>
-                        <div>
-                            <div>
-                                <img data-original="//d2c87l0yth4zbw-2.global.ssl.fastly.net/i/home/iphone-4.jpg">
+                        <div class="devices col-xs-4">
+                            <div class="iphone iphone-4">
+                                <img src="http://placehold.it/600x800">
                             </div>
                         </div>
                     </div>
