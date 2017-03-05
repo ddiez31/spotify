@@ -319,6 +319,27 @@ ul.nav {
     border-radius: 60%;
 }
 
-.nav-social {
-    float: left;
+nav.row.row-small {
+    font-size: 12px;
+    padding-top: 20px;
+    color: gray;
+}
+
+ul.nav.nav-small {
+    display: flex;
+    color: gray;
+}
+
+.media-middle {
+    color: gray;
+}
+
+.media-middle:hover {
+    color: rgb(155, 240, 225);
+    text-decoration: none;
+}
+
+.copyright {
+    font-size: 12px;
+    color: gray;
 }

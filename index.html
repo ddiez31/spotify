@@ -171,9 +171,14 @@
                 </a>
                             </li>
                             <li>
-                                <a href="#" id="header-login-link" data-tracking='{"category": "menu", "action": "log-in"}'>
-                                    <span>Se connecter</span>
-                                </a>
+                                <div class="dropdown">
+                                    <a data-toggle="dropdown" href="#">Se connecter</a>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                        <input type="name" id="inputUsername" name="username" placeholder="Username" />
+                                        <input type="password" id="inputPassword" name="password" placeholder="Password" />
+                                        <button id="btnConnex" type="submit">Connexion</button>
+                                    </ul>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -616,10 +621,9 @@
                 </div>
             </nav>
 
-            <nav>
-                <div>
-
-                    <ul>
+            <nav class="row row-small">
+                <div class="col-xs-8 col-md-6">
+                    <ul class="nav nav-small">
                         <li>
                             <a href="#">Légal</a>
                         </li>
@@ -635,19 +639,19 @@
                     </ul>
                 </div>
 
-                <div>
-                    <a href="#" title="Cliquez pour changer">
-                        <div>
-                            <div>
+                <div class="col-xs-4 col-md-6 text-right">
+                    <a class="market" href="#" title="Cliquez pour changer">
+                        <div class="media">
+                            <div class="media-body media-middle">
                                 France
                             </div>
-                            <div>
-                                <span></span>
+                            <div class="media-right media-middle">
+                                <span class="media-object flag-icon flag-icon-fr"></span>
                             </div>
                         </div>
                     </a>
 
-                    <small>&copy; 2017 Spotify AB</small>
+                    <small class="copyright">&copy; 2017 Spotify AB</small>
                 </div>
             </nav>
         </div>
