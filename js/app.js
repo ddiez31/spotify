@@ -9,7 +9,7 @@
         init: function() {
             console.log("init ok");
             $(".signout").hide();
-            this.url = "../data/users.json";
+            this.url = "/data/users.json";
             this.listener();
         },
 
